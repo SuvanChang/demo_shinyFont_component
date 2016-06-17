@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<title>fontshine</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="jquery-1.12.3.js"></script>
+	<script type="text/javascript" src="shinyFont.js"></script>
+</head>
+<body>
+
+<div>
+	<span class="shinyFont">梁婉萍</span>
+	<span class="shinyFont">人生自古谁无死</span>
+</div>
+<div class="shinyFont">The returned object is of the same type that the object returned from the element's style property; however, the two objects have different purposes. The object returned from getComputedStyle is read-only and can be used to inspect the element's style (including those set by a or an external stylesheet). The elt.style object should be used to set styles on a specific element.
+
+The first argument must be an Element (passing a non-Element Node, like a #text Node, will throw an error). Starting in Gecko 1.9.2 (Firefox 3.6 / Thunderbird 3.1 / Fennec 1.0), returned URL values now have quotes around the URL, like this: url("http://foo.com/bar.jpg").
+</div>
+
+<p class="shinyFont">In many code samples online, getComputedStyle is used from the document.defaultView object. In nearly all cases, this is needless, as getComputedStyle exists on the window object as well. It's likely the defaultView pattern was some combination of (1) folks not wanting to write a spec for window and (2) making an API that was also usable in Java. However, there is a single case where the defaultView's method must be used: when using Firefox 3.6 to access framed styles.</p>
+
+</body>
+</html>

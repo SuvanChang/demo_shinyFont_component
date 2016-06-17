@@ -1,0 +1,35 @@
+.shinyFont{
+	color:transparent;
+	-webkit-background-clip:text;
+	position: relative;
+	z-index: 0;
+}
+.shinyFont:before{
+	animation:shink 2s linear;     /*过渡动画*/
+	content: attr(data-text);
+	color: transparent;
+	background-image: linear-gradient(90deg,#f0f 30%,#ff0 65%,#0ff 100%); /*炫彩过渡颜色*/
+	background-size: 30% 100%; /*炫彩大小*/
+	background-position: 0% 0%;
+	background-repeat: no-repeat;;
+	-webkit-background-clip:text;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+.shinyFont:after{
+	content: attr(data-text);
+	color: #f00;		/*字体颜色*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index:1;
+}
+
+@keyframes shink{       /*过渡动画*/
+	0%{background-position:0% 0%;z-index: 2;}
+	33%{background-position:33% 0%;z-index: 2;}
+	66%{background-position:66% 0%;z-index: 2;}
+	100%{background-position:130% 0%;z-index: 2;}
+}
